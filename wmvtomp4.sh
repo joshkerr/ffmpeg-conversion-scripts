@@ -1,0 +1,1 @@
+ffmpeg -i "$1" -c:v libx264 -crf 23 -c:a aac -q:a 100 "${1%.*}.mp4"
